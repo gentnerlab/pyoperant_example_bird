@@ -1,0 +1,49 @@
+{
+	"comments": "json doesn't support comments",
+	"experimenter": {
+		"name": "Your Name",
+		"email": "youremail@website.com"
+	},
+	"subject": "B999",
+	"panel_name": "magpi01",
+	"experiment_path": "/home/bird/opdat/B999",
+    	"stim_path": "/home/bird/opdat/B999/stimuli",
+	"name": "Two Alt Choice task, version 1.0",
+	"description": "first version of discrimination task",
+	"debug": true,
+        "log_handlers": [""],
+	"stims": {
+		"a": "NC_AB_000.wav",
+		"b": "NC_AB_127.wav"
+	},
+	"classes": {
+		"L": {
+			"reward_value": 1.0,
+			"punish_value": 0.5,
+			"component": "left"
+			},
+		"R": {
+			"reward_value": 1.0,
+			"punish_value": 0.5,
+			"component": "right"
+			}
+	},
+	"block_design": {
+		"blocks": {
+			"default": {
+				"queue": "random",
+				"conditions": [
+					{"class": "L", "stim_name": "a"},
+					{"class": "R", "stim_name": "b"}
+				]
+			}
+		},
+		"order": ["default"]
+	},
+	"correction_trials": false,
+	"response_win": 5.0,
+	"intertrial_min": 0.5,
+	"forced_choice": false,
+	"light_schedule": "sun",
+	"shape": false
+}
